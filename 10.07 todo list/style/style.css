@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #D6D7EF;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #9395D3;
+}
+
+nav h2{
+    color: #ffffff;
+}
+
+.navBtn{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #9395D3;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.task-adder{
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.taskForm{
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 40px 40px 20px 40px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.taskForm button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #9395D3;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.titleInput , .descriptionInput{
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 2px solid #9395D3;
+}
+
+.close{
+    color: #9395D3;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+}
+
+.container{
+    margin: 40px 100px 0px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.list{
+    background-color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.list-content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.content-title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.content-title h2{
+    font-size: 20px;
+    color: #9395D3;
+    
+}
+
+.content-title p{
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+.list-btns{
+    display: flex;
+    align-items: center;
+    gap: 26px
+}
+
+.list-btns p{
+    font-size: 14px;
+    color: #9395D3;
+    font-weight: 500;
+}
+
+.trash , .check , .uncheck{
+    color: #9395D3;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.trash:hover , .check:hover , .uncheck:hover{
+    transform: translateY(-3px);
+}
+
+
+
+.active{
+    display: flex;
+}
+
+.nonActive{
+    display: none;
+}
